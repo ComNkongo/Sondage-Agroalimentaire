@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NKONGÔ | Sondage Agroalimentaire dans le G8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>NKONGÔ</h1>
+        <h3>Collectif Citoyen pour la Lutte contre la Vie Chère dans l’Ogooué-Maritime</h3>
+    
+        <div class="logo">
+            <img src="img/Logo Final 2.png" alt="Logo de NKONGÔ">
+        </div>
+    
+        <h2>Sondage sur l’Agro-alimentaire dans L'Ogooué-Maritime</h2>
+        <p>L’objectif de ces sondages est de recueillir des données objectives sur le ressenti des populations et d’identifier les principales problématiques rencontrées. 
+            Ces résultats nous permettront d’appuyer nos actions et revendications auprès des autorités et des entreprises concernées.</p>
+    
+        <form action="https://formspree.io/f/xgvollka" method="POST">
+            <div class="form-group">
+                <h4>1/ Informations générales</h4>
+                <label for="age">Âge</label>
+                <select id="age" name="âge du consommateur">
+                    <option value="18-25 ans">18-25 ans</option>
+                    <option value="26-35 ans">26-35 ans</option>
+                    <option value="36-50 ans">36-50 ans</option>
+                    <option value="plus de 50 ans">Plus de 50 ans</option>
+                </select>
+                <label for="genre">Genre</label>
+                <select id="genre" name="Genre">
+                    <option value="Homme">Homme</option>
+                    <option value="Femme">Femme</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="geolocalisation">Arrondissement/Commune/District :</label>
+                <input type="text" id="geolocalisation" name="Géolocalisation de l'émetteur" placeholder="Votre Arrondissement/Commune/District :" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="quartier">Quartier :</label>
+                <input type="text" id="quartier" name="Quartier de l'émetteur" placeholder="Votre quartier" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Téléphone :</label>
+                <input type="number" id="phone" name="Téléphone de l'émetteur" placeholder="Votre numéro de téléphone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Adresse e-mail :</label>
+                <input type="email" id="email" name="E-mail de l'émetteur" placeholder="Votre adresse e-mail" required>
+            </div>
+    
+            <div class="form-group">
+                <h4>Habitudes de consommation</h4>
+                <label for="consommation">À quelle fréquence consommez-vous des produits locaux ?</label>
+                <select id="consommation" name="Fréquence de consommation">
+                    <option value="Tous les jours">Tous les jours</option>
+                    <option value="Plusieurs fois par semaine">Plusieurs fois par semaine</option>
+                    <option value="Rarement">Rarement</option>
+                    <option value="Jamais">Jamais</option>
+                </select>
+                <label for="produits">Quels types de produits locaux consommez-vous le plus ?</label>
+                <select id="produits" name="choix des produits" multiple>
+                    <option value="Fruits et légumes">Fruits et légumes</option>
+                    <option value="Viande et poisson">Viande et poisson</option>
+                    <option value="Produits transformés (jus, conserves, etc.)">Produits transformés (jus, conserves, etc.)</option>
+                    <option value="Céréales et tubercules">Céréales et tubercules</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="achat">Où achetez-vous principalement vos produits alimentaires ?</label>
+                <select id="achat" name="Lieu d'achat">
+                    <option value="Marché local">Marché local</option>
+                    <option value="Supermarché">Supermarché</option>
+                    <option value="Magasin spécialisé">Magasin spécialisé</option>
+                    <option value="Dans mes champs">Dans mes champs</option>
+                    <option value="En ligne">En ligne</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="qualite">Comment évaluez-vous la qualité des produits locaux ?</label>
+                <select id="qualite" name="qualité des produits locaux">
+                    <option value="Excellente">Excellente</option>
+                    <option value="Bonne">Bonne</option>
+                    <option value="Moyenne">Moyenne</option>
+                    <option value="Mauvaise">Mauvaise</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="freins">Selon vous, quels sont les principaux freins à la consommation de produits locaux ?</label>
+                <select id="freins" name="choix des freins" multiple>
+                    <option value="Prix élevé">Prix élevé</option>
+                    <option value="Manque de disponibilité">Manque de disponibilité</option>
+                    <option value="Qualité insuffisante">Qualité insuffisante</option>
+                    <option value="Manque d’information">Manque d’information</option>
+                    <option value="Autre">Autre (précisez dans les commentaires)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="achat_plus">Seriez-vous prêt(e) à acheter davantage de produits locaux si leur qualité et leur disponibilité étaient améliorées ?</label>
+                <select id="achat_plus" name="achat_plus">
+                    <option value="Oui">Oui</option>
+                    <option value="Non">Non</option>
+                    <option value="Peut-être">Peut-être</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="livraison">Selon vous, les agriculteurs et commerçants offrent-ils de bonnes conditions de livraison à leurs clients ?</label>
+                <select id="livraison" name="conditions de livraison">
+                    <option value="Oui">Oui</option>
+                    <option value="Non">Non</option>
+                    <option value="Peut-être">Peut-être</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="actions_sociales">Le Gouvernement, les banques et les microfinances participent-ils suffisamment à des actions sociales ou environnementales (ex. : accompagnements, soutien aux communautés/coopératives) ?</label>
+                <select id="actions_sociales" name="participation aux actions sociales">
+                    <option value="Oui">Oui</option>
+                    <option value="Non">Non</option>
+                    <option value="Je ne sais pas">Je ne sais pas</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="amelioration_services">Selon vous, comment l'État peut-il améliorer ces services de livraison ?</label>
+                <select id="amelioration_services" name="amélioration des services">
+                    <option value="En développant les routes">En développant les routes</option>
+                    <option value="Revoir les prix du carburant">Revoir les prix du carburant</option>
+                    <option value="En revoyant les coûts des agréments et patentes">En revoyant les coûts des agréments et patentes</option>
+                    <option value="En accompagnant les acteurs économiques Gabonais">En accompagnant les acteurs économiques Gabonais</option>
+                    <option value="Autre">Autre (précisez dans les commentaires)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="recommandation">Recommanderiez-vous la consommation des produits locaux à votre entourage ?</label>
+                <select id="recommandation" name="récommandations des produits">
+                    <option value="Oui">Oui</option>
+                    <option value="Non">Non</option>
+                </select>
+            </div>
+
+            <!-- Section sur la viande -->
+            <fieldset>
+                <legend>Qualité de la Viande</legend>
+                <label for="meat_quality">Comment évaluez-vous la qualité de la viande ?</label>
+                <select id="meat_quality" name="meat_quality" required>
+                    <option value="excellente">Excellente</option>
+                    <option value="bonne">Bonne</option>
+                    <option value="moyenne">Moyenne</option>
+                    <option value="mauvaise">Mauvaise</option>
+                </select>
+                <br>
+                <label for="meat_expiration">Les dates de péremption sont-elles respectées ?</label>
+                <select id="meat_expiration" name="meat_expiration" required>
+                    <option value="oui">Oui</option>
+                    <option value="non">Non</option>
+                    <option value="parfois">Parfois</option>
+                </select>
+            </fieldset>
+    
+            <!-- Section sur les poissons -->
+            <fieldset>
+                <legend>Qualité des Poissons</legend>
+                <label for="fish_quality">Comment évaluez-vous la qualité des poissons ?</label>
+                <select id="fish_quality" name="fish_quality" required>
+                    <option value="excellente">Excellente</option>
+                    <option value="bonne">Bonne</option>
+                    <option value="moyenne">Moyenne</option>
+                    <option value="mauvaise">Mauvaise</option>
+                </select>
+                <br>
+                <label for="fish_expiration">Les dates de péremption sont-elles respectées ?</label>
+                <select id="fish_expiration" name="fish_expiration" required>
+                    <option value="oui">Oui</option>
+                    <option value="non">Non</option>
+                    <option value="parfois">Parfois</option>
+                </select>
+            </fieldset>
+    
+            <!-- Section sur les produits laitiers -->
+            <fieldset>
+                <legend>Qualité des Produits Laitiers</legend>
+                <label for="dairy_quality">Comment évaluez-vous la qualité des produits laitiers ?</label>
+                <select id="dairy_quality" name="dairy_quality" required>
+                    <option value="excellente">Excellente</option>
+                    <option value="bonne">Bonne</option>
+                    <option value="moyenne">Moyenne</option>
+                    <option value="mauvaise">Mauvaise</option>
+                </select>
+                <br>
+                <label for="dairy_expiration">Les dates de péremption sont-elles respectées ?</label>
+                <select id="dairy_expiration" name="dairy_expiration" required>
+                    <option value="oui">Oui</option>
+                    <option value="non">Non</option>
+                    <option value="parfois">Parfois</option>
+                </select>
+            </fieldset>
+    
+            <!-- Section sur les céréales -->
+            <fieldset>
+                <legend>Qualité des Céréales</legend>
+                <label for="cereal_quality">Comment évaluez-vous la qualité des céréales ?</label>
+                <select id="cereal_quality" name="cereal_quality" required>
+                    <option value="excellente">Excellente</option>
+                    <option value="bonne">Bonne</option>
+                    <option value="moyenne">Moyenne</option>
+                    <option value="mauvaise">Mauvaise</option>
+                </select>
+                <br>
+                <label for="cereal_expiration">Les dates de péremption sont-elles respectées ?</label>
+                <select id="cereal_expiration" name="cereal_expiration" required>
+                    <option value="oui">Oui</option>
+                    <option value="non">Non</option>
+                    <option value="parfois">Parfois</option>
+                </select>
+            </fieldset>
+    
+            <!-- Section sur la conservation -->
+            <fieldset>
+                <legend>Conservation des Produits</legend>
+                <label for="conservation">Comment évaluez-vous la conservation des produits ?</label>
+                <select id="conservation" name="conservation" required>
+                    <option value="excellente">Excellente</option>
+                    <option value="bonne">Bonne</option>
+                    <option value="moyenne">Moyenne</option>
+                    <option value="mauvaise">Mauvaise</option>
+                </select>
+                <br>
+                <label for="conservation_comments">Commentaires sur la conservation :</label>
+                <textarea id="conservation_comments" name="conservation_comments" rows="4" cols="50"></textarea>
+            </fieldset>
+    
+            <!-- Section sur la vente -->
+            <fieldset>
+                <legend>Vente des Produits</legend>
+                <label for="sales_quality">Comment évaluez-vous la qualité de la vente des produits ?</label>
+                <select id="sales_quality" name="sales_quality" required>
+                    <option value="excellente">Excellente</option>
+                    <option value="bonne">Bonne</option>
+                    <option value="moyenne">Moyenne</option>
+                    <option value="mauvaise">Mauvaise</option>
+                </select>
+                <br>
+                <label for="sales_comments">Commentaires sur la vente :</label>
+                <textarea id="sales_comments" name="sales_comments" rows="4" cols="50"></textarea>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="commentaire">Suggestions et remarques :</label>
+                <label for="commentaire">Quels sont, selon vous, les actions à mettre en place pour encourager la consommation de produits locaux ?</label>
+                <textarea id="commentaire" name="Suggestions et remarques" rows="4" placeholder="Entrez vos suggestions et remarques ici!"></textarea>
+            </div>
+
+            <p>Merci d’avoir répondu à ce sondage ! Vos réponses contribueront à améliorer le secteur agroalimentaire dans l'Ogooué-Maritime.</p>
+            <div class="form-group">
+                <button type="submit">Soumettre</button>
+            </div>
+            <br><br>
+        </form>
+    </div> 
+    <footer>
+        <a href="https://lionel-johnson.github.io/LionelConcept">&copy LionelConcept | 02/2025 </a>
+    </footer>
+</body>
+</html>
